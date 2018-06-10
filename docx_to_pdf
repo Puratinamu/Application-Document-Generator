@@ -1,0 +1,20 @@
+import os
+import comtypes.client
+
+wdFormatPDF = 17
+
+
+def convert_to_pdf(docx_name, output_name):
+    ''' give name of docx file, output pdf file, generates it'''
+    in_file = os.path.abspath(docx_name)
+    out_file = os.path.abspath(output_name)
+
+    word = comtypes.client.CreateObject('Word.Application')
+
+    doc = word.Documents.Open(in_file)
+
+    doc.SaveAs(out_file, FileFormat=wdFormatPDF)
+
+    doc.Close()
+
+    word.Quit()

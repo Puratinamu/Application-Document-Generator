@@ -1,0 +1,35 @@
+[
+  {
+    "default_options": {
+      "resume_name": "default_resume_name",
+      "cover_letter": "default_cover_name",
+      "transcript": "default_trascript_name"
+    },
+    "test": {
+      "resume_name": "DEF",
+      "cover_letter": "DEF",
+      "transcript": "DEF"
+    },
+    "Software_Dev": {
+      "resume_name": "DEF",
+      "cover_letter": "DEF",
+      "transcript": "DEF"
+    },
+    "Data_Science": {
+      "resume_name": "DEF",
+      "cover_letter": "DEF",
+      "transcript": "DEF"
+    },
+    "QA": {
+      "resume_name": "DEF",
+      "cover_letter": "DEF",
+      "transcript": "DEF"
+    },
+    "apply_to": {
+      "test": "YES",
+      "Software_Dev": "YES",
+      "Data_Science": "NO",
+      "QA": "NO"
+    }
+  }
+]
