@@ -33,9 +33,11 @@ for job in jobs_list:
     job_url = urls.get('default') + job_link['href'] + ext
     job_data = s.get(job_url)
     job_soup = BeautifulSoup(job_data.text, 'html.parser')
-
+    
+    # Set job type
     mode = 'default_options'
 
+    # Selecting documents
     resume_option = job_soup.find('div', {'id': widgets.resume})
     resume_option.get('option')['selected'] = 'selected>' + resume_config.get(mode).get('resume_name')
 
